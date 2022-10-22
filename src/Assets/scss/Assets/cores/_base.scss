@@ -21,7 +21,7 @@ html, body {
     margin: 0;
 
         &:hover {
-            background-color: @color-dark;
+            background-color: $color-dark;
             color: #fff;
         }
 }
