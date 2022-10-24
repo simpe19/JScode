@@ -19,29 +19,32 @@ html, body {
     text-decoration: none;
     transition: 0.3s;
     margin: 0;
+    border: none;
 
-        &:hover {
-            background-color: $color-dark;
-            color: #fff;
+        ._btn-theme-right,
+        ._btn-theme-left {
+            position: absolute;
+            height: 20px;
+            width: 20px;
+        
+            ._btn-theme-left {
+                top: 10px;
+                left: 10px;
+                border-left: 1px solid #fff;
+                border-top: 1px solid #fff;
+                }
+            ._btn-theme-right {
+                bottom: 10px;
+                right: 10px;
+                border-right: 1px solid #fff;
+                border-bottom: 1px solid #fff;
+                }
         }
+
+            &:hover {
+                background-color: $color-dark;
+                color: #fff;
+            }
 }
 
-._btn-theme ._btn-theme-right,
-._btn-theme-left {
-    position: absolute;
-    height: 20px;
-    width: 20px;
 
-    ._btn-theme-left {
-        top: 10px;
-        left: 10px;
-        border-left: 1px solid #fff;
-        border-top: 1px solid #fff;
-        }
-    ._btn-theme-right {
-        bottom: 10px;
-        right: 10px;
-        border-right: 1px solid #fff;
-        border-bottom: 1px solid #fff;
-        }
-}

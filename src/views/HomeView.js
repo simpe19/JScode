@@ -1,12 +1,13 @@
 import React from 'react'
 import MainMenuSection from '../sections/MainMenuSection'
+import ShowCase from '../sections/ShowCase'
 
 const HomeView = () => {
   return (
     <>
-    <MainMenuSection />
+    <ShowCase />
     </>
-  )
+  ) 
 }
 
 export default HomeView
