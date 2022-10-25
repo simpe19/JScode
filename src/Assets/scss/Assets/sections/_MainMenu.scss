@@ -2,12 +2,9 @@
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(230,230,230,1) 0%, rgba(245,245,245,1) 100%); 
     .color {
-        top: 0;
-        left: 0;
         display: flex;
-        padding: 30px 100px;
-        height: 100px;
-        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
         justify-content: space-between;
         align-items: center;
 
@@ -19,6 +16,7 @@
 
             &:hover {
                 color: $color-text-dark;
+                
                 }
         }
 
@@ -32,7 +30,7 @@
                 margin-left: 15px;
                 margin-right: 15px;
                 text-decoration: none;
-                font-weight: 700;
+                font-weight: 600;
                 color: $color-text-dark;
 
                 &:hover {
@@ -69,6 +67,7 @@
                 &:hover {
                 background-color: $color-dark;
                 color: $color-theme;
+                transition: 0.2s; 
                 }
         }
         .active {

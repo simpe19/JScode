@@ -1,17 +1,18 @@
 import React from 'react'
+import ExternalLink from '../components/ExternalLink'
 
 const FooterSection = () => {
   return (
     <footer>
-    <div class="socials">
-        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-        <a href="#"><i class="fa-brands fa-google"></i></a>
-        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-    </div>
-    <p>© 2022 Fixxo. All Rights Reserved</p>
-</footer>
+      <div className="socials">
+        <ExternalLink link='https://www.facebook.com/' icon='fa-brands fa-facebook-f' />
+        <ExternalLink link='https://www.instagram.com/' icon='fa-brands fa-instagram' />
+        <ExternalLink link='https://twitter.com/' icon='fa-brands fa-twitter' />
+        <ExternalLink link='https://www.google.com/' icon='fa-brands fa-google' />
+        <ExternalLink link='https://www.linkedin.com/' icon='fa-brands fa-linkedin' />
+      </div>
+      © 2022 Fixxo. All Rights Reserved
+  </footer>
   )
 }
 

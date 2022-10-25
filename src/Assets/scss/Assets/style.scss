@@ -4,8 +4,10 @@
 
 // cores
 @import "./cores/variables";
+@import "./cores/colors";
 @import "./cores/base";
 // sections
 
 @import "./sections/MainMenu";
 @import "./sections/ShowCase";
+@import "./sections/FooterSection";
