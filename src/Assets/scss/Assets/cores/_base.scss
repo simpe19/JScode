@@ -46,3 +46,9 @@ html, body {
                 color: #fff;
             }
 }
+
+@media (min-width: 1600px) {
+    .container {
+        max-width: 1700px;
+    }
+}

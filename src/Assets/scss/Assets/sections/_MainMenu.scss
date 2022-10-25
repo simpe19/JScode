@@ -1,80 +1,101 @@
 .head {
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(230,230,230,1) 0%, rgba(245,245,245,1) 100%); 
-    .color {
-        display: flex;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        justify-content: space-between;
-        align-items: center;
 
-        .logo {
-            text-decoration: none;
-            font-size: 35px;
-            font-weight: 700;
-            color: $color-text-dark;
-
-            &:hover {
-                color: $color-text-dark;
-                
-                }
-        }
-
-        .navigation {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: $font-poppins;
-
-            .menu-link {
-                margin-left: 15px;
-                margin-right: 15px;
+        .color {
+            display: grid;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 'logo menuicons'
+                                'menulinks menulinks'
+            ;
+    
+            .logo {
+                grid-area: logo;
                 text-decoration: none;
-                font-weight: 600;
+                font-size: 35px;
+                font-weight: 700;
                 color: $color-text-dark;
-
                 &:hover {
+                    color: $color-text-dark;
+                    
+                }
+            }
+    
+            .menu-links {
+                grid-area: menulinks;
+                height: 100%;
+                display: grid;
+                overflow: hidden;
+                font-weight: 500;
+                .menu-link {
+                    margin: 5px 15px;
+                    text-decoration: none;
+                    color: $color-text-dark;
+    
+                    &:hover {
                     color: $color-theme;
                     transition: 0.3s; 
+                        }
+                }
+                .active {
+                color: $color-theme;
+                text-decoration: none;
+                }
+            }
+            .menu-icons {
+                grid-area: menuicons;
+                display:flex;
+                align-items: center;
+                justify-content: flex-end;
+
+
+                .menu-icon {
+                    position: relative;
+                    text-decoration: none;
+                    align-items: center;
+                    margin-left: 5px;
+                    margin-right: 10px;
+                    display: flex;
+                    justify-content: center;
+                    height: 30px;
+                    width: 30px;
+                    color: #222529;
+                    font-size: 0.8rem;
+                    background-color: #fff;
+                    border-radius: 50%;
+                    box-shadow: 0px 0px 5px 0px rgba(125, 125, 125, 0.75);
+    
+                    &:hover {
+                        background-color: $color-dark;
+                        color: $color-theme;
+                        transition: 0.2s; 
                     }
             }
-            .active {
-                color: $color-theme;
-                text-decoration: none;
-            }
-        }
-        .menu-icons {
-            display:flex;
-            align-items: center;
-            justify-content: center;
-
-            .menu-icon {
-                position: relative;
-                text-decoration: none;
-                align-items: center;
-                margin-left: 5px;
-                margin-right: 5px;
-                display: flex;
-                justify-content: center;
-                height: 41px;
-                width: 41px;
-                color: #222529;
-                font-size: 1.1rem;
-                background-color: #fff;
-                border-radius: 50%;
-                box-shadow: 0px 0px 5px 0px rgba(125, 125, 125, 0.75);
-
-                &:hover {
-                background-color: $color-dark;
-                color: $color-theme;
-                transition: 0.2s; 
+                .active {
+                    color: $color-theme;
+                    text-decoration: none;
+                    background-color: $color-dark;
                 }
+
+            }
+            
         }
-        .active {
-            color: $color-theme;
-            text-decoration: none;
-            background-color: $color-dark;
-        }
+        @media (min-width: 1200px) {
+            .color {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-areas: 'logo menulinks menuicons';
+                padding-top: 20px;
+                padding-bottom: 20px;
+
+
+                .menu-links {
+                    grid-area: menulinks;
+                    display: flex;
+                    font-weight: 500;
+                    justify-content: center;
+                    align-items: center;
+            }
         }
     }
 }
