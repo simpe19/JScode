@@ -1,5 +1,6 @@
 .head {
-
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(230,230,230,1) 0%, rgba(245,245,245,1) 100%); 
         .color {
             display: grid;
             padding-top: 10px;
@@ -24,7 +25,7 @@
             .menu-links {
                 grid-area: menulinks;
                 height: 100%;
-                display: grid;
+                display: none;
                 overflow: hidden;
                 font-weight: 500;
                 .menu-link {
@@ -76,7 +77,12 @@
                     text-decoration: none;
                     background-color: $color-dark;
                 }
-
+                .btn-menu-icon {
+                    color: $color-white;
+                    background-color: $color-dark;
+                    border: none;
+                    outline: none;
+                }
             }
             
         }
