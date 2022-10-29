@@ -6,8 +6,10 @@
 @import "./cores/variables";
 @import "./cores/colors";
 @import "./cores/base";
+@import "./cores/buttons";
 // sections
 
 @import "./sections/MainMenu";
+@import "./sections/ProductGridSection";
 @import "./sections/ShowCase";
 @import "./sections/FooterSection";

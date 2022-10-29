@@ -10,43 +10,6 @@ html, body {
 }
 
 
-._btn-theme {
-    position: relative;
-    text-align: center;
-    background-color: $color-theme;
-    color: $color-white;
-    padding: 20px 50px;
-    text-decoration: none;
-    transition: 0.3s;
-    margin: 0;
-    border: none;
-
-        ._btn-theme-right,
-        ._btn-theme-left {
-            position: absolute;
-            height: 20px;
-            width: 20px;
-        
-            ._btn-theme-left {
-                top: 10px;
-                left: 10px;
-                border-left: 1px solid #fff;
-                border-top: 1px solid #fff;
-                }
-            ._btn-theme-right {
-                bottom: 10px;
-                right: 10px;
-                border-right: 1px solid #fff;
-                border-bottom: 1px solid #fff;
-                }
-        }
-
-            &:hover {
-                background-color: $color-dark;
-                color: #fff;
-            }
-}
-
 @media (min-width: 1600px) {
     .container {
         max-width: 1700px;
