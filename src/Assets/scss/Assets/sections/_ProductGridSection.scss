@@ -25,6 +25,7 @@
             img {
                 width: 100%;
                 height: 210px;
+                object-fit: cover;
             }
         .card-menu {
             position: absolute;
@@ -99,10 +100,10 @@
 
         &:hover {
             .card-menu {
-                display: block;
+                display: block !important;
             }
             .btn-card-theme {
-                display: flex;
+                display: flex !important;
             }
         }
 

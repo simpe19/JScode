@@ -7,6 +7,7 @@ import WishlistView from './views/WishlistView';
 import CompareView from './views/CompareView';
 import SearchView from './views/SearchView';
 import ProductsView from './views/ProductsView';
+import ProductDetailsView from './views/ProductDetailsView';
 import CategoriesView from './views/CategoriesView';
 import NotFoundView from './views/NotFoundView';
 
@@ -19,6 +20,7 @@ function App() {
         <Route path='/' element={<HomeView/>} />
         <Route path='/categories' element={<CategoriesView/>} />
         <Route path='/products' element={<ProductsView/>} />
+        <Route path='/products/:name' element={<ProductDetailsView />} />
         <Route path='/contacts' element={<ContactsView/>} />
         <Route path='/search' element={<SearchView/>} />
         <Route path='/compare' element={<CompareView/>} />
