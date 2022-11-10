@@ -1,0 +1,45 @@
+
+    
+    .banner {
+        height: 310px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        margin-bottom: 60px;
+        justify-content: space-between;
+        max-width: 1110px;
+
+
+        .banner-left,
+        .banner-right {
+            width: 33%;
+            height: 100px;
+            position: relative;
+            text-align: center;
+
+            p {
+                position: absolute;
+                left: 300px;
+                top: 100px;
+                width: 195px;
+                font-size: 28px;
+                font-weight: 700;
+            }
+            button {
+                position: absolute;
+                left: 300px;
+                top: 200px;
+                width: 195px;
+            }
+        }
+        .banner-img-left { 
+            height: 310px;
+            width: 600px;
+            background-color: aqua;
+        }
+        .banner-img-right { 
+            height: 310px;
+            width: 600px;
+            background-color: aqua;
+        }
+    }
