@@ -17,24 +17,38 @@ import { ProductsContext } from './contexts/contexts'
 function App() {
   const [products, setProducts] = useState({
     all: [],
-    featuredProducts: []
+    featuredProducts: [],
+    listProducts: []
   })
  
 
   useEffect (() => {
      const fetchAllProducts = async () => {
       let result = await fetch('https://win22-webapi.azurewebsites.net/api/products')
-      setProducts({...products, all: await result.json()})
+      let Data = await result.json()
+      setProducts( oldProducts => {
+        return {...oldProducts, allProducts: Data}})
      }
      fetchAllProducts()
 
      const fetchFeaturedProducts = async () => {
       let result = await fetch('https://win22-webapi.azurewebsites.net/api/products?take=8')
-      setProducts({...products, featuredProducts: await result.json()})
+      let Data = await result.json()
+      setProducts( oldProducts => {
+        return {...oldProducts, featuredProducts: Data}})
      }
      fetchFeaturedProducts()
 
-  }, [setProducts])
+     const fetchlistProducts = async () => {
+      let result = await fetch('https://win22-webapi.azurewebsites.net/api/products?take=4')
+      let Data = await result.json()
+      setProducts( oldProducts => {
+        return {...oldProducts, listProducts: Data}
+      })
+     }
+     fetchlistProducts()
+
+  }, [])
 
   return (
     <BrowserRouter>

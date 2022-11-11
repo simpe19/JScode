@@ -7,9 +7,9 @@ import img3 from '../images/delivery-truck.svg';
 
 const SupportSection = () => {
   return (
-<section class="webinfo">
-    <div class="box1 container">
-        <div class="infobox">
+<section className="webinfo">
+    <div className="box1 container">
+        <div className="infobox">
             <div className='wrap'>
                 <div className='background' >
                     <img src={img1} alt='bild'/>
@@ -20,7 +20,7 @@ const SupportSection = () => {
                 <p>Village did removed enjoyed explain talking.</p>
             </div>
         </div>
-        <div class="infobox">
+        <div className="infobox">
             <div className='wrap'>
                 <div className='background' >
                     <img src={img2} alt='bild'/>
@@ -31,7 +31,7 @@ const SupportSection = () => {
                 <p>Village did removed enjoyed explain talking.</p>
             </div>
         </div>
-        <div class="infobox">
+        <div className="infobox">
             <div className='wrap'>
                 <div className='background' >
                     <img src={img3} alt='bild'/>
@@ -42,7 +42,7 @@ const SupportSection = () => {
                 <p>Village did removed enjoyed explain talking.</p>
             </div>
         </div>
-        <div class="infobox">
+        <div className="infobox">
             <div className='wrap'>
                 <div className='background' >
                     <img src={img3} alt='bild'/>

@@ -19,7 +19,7 @@ const HomeView = () => {
       <ShowCase />
       <ProductGridSection title="Featured Products" items={productContext.featuredProducts} />
       <BannerSection />
-      <TopProductSection />
+      <TopProductSection title="2 for 29" items={productContext.listProducts}/>
       <SupportSection />
       <FooterSection />
     </>
