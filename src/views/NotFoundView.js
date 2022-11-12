@@ -12,9 +12,7 @@ const NotFoundView = () => {
       >
         <h1>404 - Page Not Found</h1>
       </div>
-      <div style={{ position: "fixed", bottom: "0" }}>
         <FooterSection />
-      </div>
     </>
   );
 };

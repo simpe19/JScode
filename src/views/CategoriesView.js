@@ -3,7 +3,7 @@ import FooterSection from '../sections/FooterSection'
 import MainMenuSection from '../sections/MainMenuSection'
 
 const CategoriesView = () => {
-  window.top.document.title = "Catergories"
+  window.top.document.title = "Categories"
   return (
     <>
     <MainMenuSection />
